@@ -9,35 +9,23 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Brian Coffey</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo">Brian Coffey</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Brian Coffey</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+    </header>
     <section id="profile">
       <div class="section__pic-container">
         <img
@@ -51,7 +39,7 @@
         <p class="section__text__p2">Software Engineer</p>
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
+            class="btn btn-color-1"
             onclick="window.open('./assets/resume.pdf')"
           >
             Download Resume
